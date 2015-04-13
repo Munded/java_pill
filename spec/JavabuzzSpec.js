@@ -60,4 +60,12 @@ describe('Javabuzz', function() {
 
   });
 
+  describe('it can count upwards', function(){
+
+    it('can count to 5', function(){
+      expect(javabuzz.play(5)).toEqual([1, 2, "Java", 4, "Buzz"]);
+    });
+
+  });
+
 });

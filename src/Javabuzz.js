@@ -22,3 +22,11 @@ Javabuzz.prototype.says = function(number) {
   if (this.isDivisibleByFive(number)) return "Buzz";
   return number;
 };
+
+Javabuzz.prototype.play = function(max) {
+  var list = []
+  for(count = 1; count <= max; count++){
+    list.push(this.says(count));
+  };
+  return list;
+};
